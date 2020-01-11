@@ -475,7 +475,6 @@ def main():
     kernel = 'rbf'
     plt.close('all')
     excel_path = 'C:/cygwin64/home/jaipe/Thesis/cross-validation/CV_results/'
-    full_path = excel_path + data_set+'_'+kernel+'_PBC'+pb+'.xlsx'
     
     best_results_list = [] # this list stores the best result for each trial
 
