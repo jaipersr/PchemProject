@@ -422,6 +422,7 @@ def C_MSE_plot(result,param,data_set,pb,N,cv_value,epsilon):
         plt.savefig('cross-validation/'+data_set+'/PBC/N_'+str(N)+'/MSE_Surface_cv_' + str(cv_value)+'_C.png')
     else:
         plt.savefig('cross-validation/'+data_set+'/NO_PBC/N_'+str(N)+'/MSE_Surface_cv_' + str(cv_value)+'_C.png')
+    return
 
 def epsilon_MSE_plot(result,param,data_set,pb,N,cv_value,C):
     plt.figure()
@@ -436,6 +437,7 @@ def epsilon_MSE_plot(result,param,data_set,pb,N,cv_value,C):
         plt.savefig('cross-validation/' +data_set+'/PBC/N_'+str(N)+'/MSE_Surface_cv_' + str(cv_value)+'_epsilon.png')
     else:
         plt.savefig('cross-validation/' +data_set+'/NO_PBC/N_'+str(N)+'/MSE_Surface_cv_' + str(cv_value)+'_epsilon.png')
+    return
             
 def append_results_to_excel(best_results_list,model,full_path,param_dict,kernel):
 
@@ -459,6 +461,7 @@ def append_results_to_excel(best_results_list,model,full_path,param_dict,kernel)
     pf.to_excel(excel_writer = writer,sheet_name = 'grid')
     writer.save()
     writer.close()
+    return
     
   
 def main():
